@@ -1,0 +1,13 @@
+{
+  "buildCommand": "npm run build:web",
+  "outputDirectory": "dist",
+  "framework": null,
+  "trailingSlash": false,
+  "cleanUrls": true,
+  "rewrites": [
+    {
+      "source": "/((?!_expo|favicon|assets|metadata).*)",
+      "destination": "/"
+    }
+  ]
+}
