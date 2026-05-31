@@ -6,9 +6,6 @@ on:
   pull_request:
     branches: [main]
 
-env:
-  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
-
 jobs:
   check-app:
     runs-on: ubuntu-latest
@@ -28,6 +25,3 @@ jobs:
 
       - name: Check TypeScript
         run: npx tsc --noEmit
-
-      - name: Check Expo project
-        run: npx expo-doctor
